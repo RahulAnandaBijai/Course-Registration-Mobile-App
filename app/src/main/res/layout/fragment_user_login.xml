@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightest_blue"
+    tools:context=".fragments.student.UserLoginFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvStudentLoginTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/tvStudentLoginSubtitle"
+            android:layout_marginStart="25dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/course_registration"
+            android:textAlignment="center"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/tvStudentLoginSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginBottom="50dp"
+            app:layout_constraintTop_toBottomOf="@id/tvStudentLoginTitle"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/etStudentLoginStudentId"
+            android:gravity="center"
+            android:text="@string/student_login_fragment_label"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/etStudentLoginStudentId"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            app:layout_constraintTop_toBottomOf="@id/tvStudentLoginSubtitle"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/etStudentLoginPassword"
+            android:background="@drawable/et_custom"
+            android:hint="@string/student_id"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890@."
+            android:inputType="textFilter"
+            android:padding="15dp"
+            android:textSize="15sp"
+            android:importantForAutofill="no" />
+
+        <EditText
+            android:id="@+id/etStudentLoginPassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            app:layout_constraintTop_toBottomOf="@id/etStudentLoginStudentId"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/btStudentLoginSubmit"
+            android:background="@drawable/et_custom"
+            android:hint="@string/password"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890@~`#$%^*()_,./;'[]\?:{}|"
+            android:inputType="textPassword"
+            android:padding="15dp"
+            android:textSize="15sp"
+            android:importantForAutofill="no" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btStudentLoginSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="30dp"
+            app:layout_constraintTop_toBottomOf="@id/etStudentLoginPassword"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/btStudentRegister"
+            android:text="@string/login"
+            android:textColor="@color/lightest_blue"
+            app:cornerRadius="18dp" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btStudentRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="30dp"
+            app:layout_constraintTop_toBottomOf="@id/btStudentLoginSubmit"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:text="@string/register"
+            android:textColor="@color/lightest_blue"
+            app:cornerRadius="18dp" />
+
+        <ImageView
+            android:id="@+id/ivUserLoginToAdminLogin"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:layout_constraintTop_toBottomOf="@id/btStudentRegister"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/tvSwipeRight"
+            android:src="@drawable/ic_arrow_right"
+            android:contentDescription="@string/go_to_admin_login" />
+
+        <TextView
+            android:id="@+id/tvSwipeRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/ivUserLoginToAdminLogin"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginBottom="20dp"
+            android:text="@string/admin_login_fragment_label"
+            android:textSize="15sp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

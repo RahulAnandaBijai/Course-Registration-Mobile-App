@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/STFX/CSCI_524_Mobile_Apps/Android_Studio/Assignment3_CourseRegistrationApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.19375" />
+        <entry key="..\:/STFX/CSCI_524_Mobile_Apps/Android_Studio/Assignment3_CourseRegistrationApp/app/src/main/res/drawable/btn_custom.xml" value="0.19375" />
+        <entry key="..\:/STFX/CSCI_524_Mobile_Apps/Android_Studio/Assignment3_CourseRegistrationApp/app/src/main/res/drawable/button_hexagon.xml" value="0.2675925925925926" />
+        <entry key="..\:/STFX/CSCI_524_Mobile_Apps/Android_Studio/Assignment3_CourseRegistrationApp/app/src/main/res/drawable/button_oval.xml" value="0.2712962962962963" />
+        <entry key="..\:/STFX/CSCI_524_Mobile_Apps/Android_Studio/Assignment3_CourseRegistrationApp/app/src/main/res/drawable/et_custom.xml" value="0.19375" />
+        <entry key="..\:/STFX/CSCI_524_Mobile_Apps/Android_Studio/Assignment3_CourseRegistrationApp/app/src/main/res/drawable/ic_arrow_left.xml" value="0.19375" />
+        <entry key="..\:/STFX/CSCI_524_Mobile_Apps/Android_Studio/Assignment3_CourseRegistrationApp/app/src/main/res/drawable/ic_arrow_right.xml" value="0.19375" />
+        <entry key="..\:/STFX/CSCI_524_Mobile_Apps/Android_Studio/Assignment3_CourseRegistrationApp/app/src/main/res/drawable/ic_edit.xml" value="0.24814814814814815" />
+        <entry key="..\:/STFX/CSCI_524_Mobile_Apps/Android_Studio/Assignment3_CourseRegistrationApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.275" />
+        <entry key="..\:/STFX/CSCI_524_Mobile_Apps/Android_Studio/Assignment3_CourseRegistrationApp/app/src/main/res/layout-v23/course_view.xml" value="0.17760416666666667" />
+        <entry key="..\:/STFX/CSCI_524_Mobile_Apps/Android_Studio/Assignment3_CourseRegistrationApp/app/src/main/res/layout/activity_main.xml" value="0.16666666666666666" />
+        <entry key="..\:/STFX/CSCI_524_Mobile_Apps/Android_Studio/Assignment3_CourseRegistrationApp/app/src/main/res/layout/alluser_register_view.xml" value="0.2210144927536232" />
+        <entry key="..\:/STFX/CSCI_524_Mobile_Apps/Android_Studio/Assignment3_CourseRegistrationApp/app/src/main/res/layout/course_view.xml" value="0.1" />
+        <entry key="..\:/STFX/CSCI_524_Mobile_Apps/Android_Studio/Assignment3_CourseRegistrationApp/app/src/main/res/layout/fragment_admin_all_user_registered.xml" value="0.2210144927536232" />
+        <entry key="..\:/STFX/CSCI_524_Mobile_Apps/Android_Studio/Assignment3_CourseRegistrationApp/app/src/main/res/layout/fragment_admin_course_add.xml" value="0.1" />
+        <entry key="..\:/STFX/CSCI_524_Mobile_Apps/Android_Studio/Assignment3_CourseRegistrationApp/app/src/main/res/layout/fragment_admin_course_detail.xml" value="0.1" />
+        <entry key="..\:/STFX/CSCI_524_Mobile_Apps/Android_Studio/Assignment3_CourseRegistrationApp/app/src/main/res/layout/fragment_admin_course_list.xml" value="0.15830800405268491" />
+        <entry key="..\:/STFX/CSCI_524_Mobile_Apps/Android_Studio/Assignment3_CourseRegistrationApp/app/src/main/res/layout/fragment_admin_login.xml" value="0.1" />
+        <entry key="..\:/STFX/CSCI_524_Mobile_Apps/Android_Studio/Assignment3_CourseRegistrationApp/app/src/main/res/layout/fragment_course_detail.xml" value="0.15830800405268491" />
+        <entry key="..\:/STFX/CSCI_524_Mobile_Apps/Android_Studio/Assignment3_CourseRegistrationApp/app/src/main/res/layout/fragment_course_list.xml" value="0.16666666666666666" />
+        <entry key="..\:/STFX/CSCI_524_Mobile_Apps/Android_Studio/Assignment3_CourseRegistrationApp/app/src/main/res/layout/fragment_course_registration.xml" value="0.16666666666666666" />
+        <entry key="..\:/STFX/CSCI_524_Mobile_Apps/Android_Studio/Assignment3_CourseRegistrationApp/app/src/main/res/layout/fragment_registered_course.xml" value="0.1765625" />
+        <entry key="..\:/STFX/CSCI_524_Mobile_Apps/Android_Studio/Assignment3_CourseRegistrationApp/app/src/main/res/layout/fragment_user_login.xml" value="0.1" />
+        <entry key="..\:/STFX/CSCI_524_Mobile_Apps/Android_Studio/Assignment3_CourseRegistrationApp/app/src/main/res/layout/fragment_user_registration.xml" value="0.1" />
+        <entry key="..\:/STFX/CSCI_524_Mobile_Apps/Android_Studio/Assignment3_CourseRegistrationApp/app/src/main/res/layout/item_view.xml" value="0.15830800405268491" />
+        <entry key="..\:/STFX/CSCI_524_Mobile_Apps/Android_Studio/Assignment3_CourseRegistrationApp/app/src/main/res/layout/register_view.xml" value="0.1765625" />
+        <entry key="..\:/STFX/CSCI_524_Mobile_Apps/Android_Studio/Assignment3_CourseRegistrationApp/app/src/main/res/menu/logout_menu.xml" value="0.3255208333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

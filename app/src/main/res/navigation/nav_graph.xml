@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/userLoginFragment">
+
+    <fragment
+        android:id="@+id/userLoginFragment"
+        android:name="com.example.assignment3_courseregistrationapp.fragments.student.UserLoginFragment"
+        android:label="@string/student_login_fragment_label"
+        tools:layout="@layout/fragment_user_login" >
+        <action
+            android:id="@+id/action_userLoginFragment_to_userRegistrationFragment"
+            app:destination="@id/userRegistrationFragment" />
+        <action
+            android:id="@+id/action_userLoginFragment_to_courseListFragment"
+            app:destination="@id/courseListFragment" />
+        <action
+            android:id="@+id/action_userLoginFragment_to_adminLoginFragment"
+            app:destination="@id/adminLoginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userRegistrationFragment"
+        android:name="com.example.assignment3_courseregistrationapp.fragments.student.UserRegistrationFragment"
+        android:label="@string/student_registration_fragment_label"
+        tools:layout="@layout/fragment_user_registration" >
+        <action
+            android:id="@+id/action_userRegistrationFragment_to_userLoginFragment"
+            app:destination="@id/userLoginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/courseListFragment"
+        android:name="com.example.assignment3_courseregistrationapp.fragments.student.CourseListFragment"
+        android:label="@string/course_list_fragment_label"
+        tools:layout="@layout/fragment_course_list" >
+        <argument
+            android:name="studentId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_courseListFragment_to_courseDetailFragment"
+            app:destination="@id/courseDetailFragment" />
+        <action
+            android:id="@+id/action_courseListFragment_to_registeredCourseFragment"
+            app:destination="@id/registeredCourseFragment" />
+        <action
+            android:id="@+id/action_courseListFragment_to_userLoginFragment"
+            app:destination="@id/userLoginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/adminLoginFragment"
+        android:name="com.example.assignment3_courseregistrationapp.fragments.admin.AdminLoginFragment"
+        android:label="@string/admin_login_fragment_label"
+        tools:layout="@layout/fragment_admin_login" >
+        <action
+            android:id="@+id/action_adminLoginFragment_to_userLoginFragment"
+            app:destination="@id/userLoginFragment" />
+        <action
+            android:id="@+id/action_adminLoginFragment_to_adminCourseListFragment"
+            app:destination="@id/adminCourseListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/courseDetailFragment"
+        android:name="com.example.assignment3_courseregistrationapp.fragments.student.CourseDetailFragment"
+        android:label="@string/course_detail_fragment_label"
+        tools:layout="@layout/fragment_course_detail">
+        <argument
+            android:name="courseId"
+            app:argType="string" />
+        <argument
+            android:name="courseTerm"
+            app:argType="string" />
+        <argument
+            android:name="studentId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_courseDetailFragment_to_registeredCourseFragment"
+            app:destination="@id/registeredCourseFragment" />
+        <action
+            android:id="@+id/action_courseDetailFragment_to_userLoginFragment"
+            app:destination="@id/userLoginFragment" />
+        <action
+            android:id="@+id/action_courseDetailFragment_to_courseListFragment"
+            app:destination="@id/courseListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/adminCourseListFragment"
+        android:name="com.example.assignment3_courseregistrationapp.fragments.admin.AdminCourseListFragment"
+        android:label="@string/course_list_fragment_label"
+        tools:layout="@layout/fragment_admin_course_list" >
+        <action
+            android:id="@+id/action_adminCourseListFragment_to_adminCourseDetailFragment"
+            app:destination="@id/adminCourseDetailFragment" />
+        <action
+            android:id="@+id/action_adminCourseListFragment_to_adminCourseAddFragment"
+            app:destination="@id/adminCourseAddFragment" />
+        <action
+            android:id="@+id/action_adminCourseListFragment_to_userLoginFragment"
+            app:destination="@id/userLoginFragment" />
+        <action
+            android:id="@+id/action_adminCourseListFragment_to_adminAllUserRegisteredFragment"
+            app:destination="@id/adminAllUserRegisteredFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/adminCourseDetailFragment"
+        android:name="com.example.assignment3_courseregistrationapp.fragments.admin.AdminCourseDetailFragment"
+        android:label="@string/course_detail_fragment_label"
+        tools:layout="@layout/fragment_admin_course_detail" >
+        <action
+            android:id="@+id/action_adminCourseDetailFragment_to_adminCourseAddFragment"
+            app:destination="@id/adminCourseAddFragment" />
+        <argument
+            android:name="courseId"
+            app:argType="string" />
+        <argument
+            android:name="courseTerm"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_adminCourseDetailFragment_to_userLoginFragment"
+            app:destination="@id/userLoginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/adminCourseAddFragment"
+        android:name="com.example.assignment3_courseregistrationapp.fragments.admin.AdminCourseAddFragment"
+        android:label="@string/admin_add_fragment_label"
+        tools:layout="@layout/fragment_admin_course_add" >
+        <action
+            android:id="@+id/action_adminCourseAddFragment_to_adminCourseListFragment"
+            app:destination="@id/adminCourseListFragment" />
+        <argument
+            android:name="courseName"
+            app:argType="string" />
+        <argument
+            android:name="courseId"
+            app:argType="string" />
+        <argument
+            android:name="courseTerm"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_adminCourseAddFragment_to_userLoginFragment"
+            app:destination="@id/userLoginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registeredCourseFragment"
+        android:name="com.example.assignment3_courseregistrationapp.fragments.student.RegisteredCourseFragment"
+        android:label="@string/registered_course_fragment_label"
+        tools:layout="@layout/fragment_registered_course" >
+        <argument
+            android:name="studentId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_registeredCourseFragment_to_userLoginFragment"
+            app:destination="@id/userLoginFragment" />
+        <action
+            android:id="@+id/action_registeredCourseFragment_to_courseListFragment"
+            app:destination="@id/courseListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/adminAllUserRegisteredFragment"
+        android:name="com.example.assignment3_courseregistrationapp.fragments.admin.AdminAllUserRegisteredFragment"
+        android:label="@string/all_user_registered_fragment_label"
+        tools:layout="@layout/fragment_admin_all_user_registered" >
+        <action
+            android:id="@+id/action_adminAllUserRegisteredFragment_to_userLoginFragment"
+            app:destination="@id/userLoginFragment" />
+    </fragment>
+</navigation>
